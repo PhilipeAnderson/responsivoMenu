@@ -19,6 +19,45 @@
     max-width: 100%;
 }
 
+.menu{
+    width: 75%;
+    height: 100vh;
+    background-color: #222d32;
+    color: #fff;
+    position: absolute;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    padding-top: 1rem;
+    padding-left: 1rem;
+}
+
+.profile-img{
+    display: block;
+    width: 65px;
+    padding-right: 1rem;
+}
+
 .profile-img img{
+    border-radius: 50%;
     max-width: 100%;
+}
+
+.status{
+    text-transform: capitalize;
+    display: flex; 
+    align-items: center;
+}
+
+.status::before{
+    content: '';
+    width: 10px;
+    height:10px;
+    display: block;
+    border-radius:50%;
+    background-color:green;
+    margin-right: 5px;
+    
 }
