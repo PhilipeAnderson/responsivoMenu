@@ -1,65 +1,74 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <title>WebTest</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/style.css">
-        <script type="text/javascript" src="js/script.js"></script>
-    </head>
-    <body>
-        <div class="container">
-            <header class="header">
-                <div class="logo">
-                    <img src="img/logo.png" alt="logo">
+
+<head>
+    <title>WebTest</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <img src="img/logo.png" alt="logo">
+            </div>
+            <button class="icon-menu" id="icon-menu" onclick="hideMenu()">
+                <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                    <g>
+                        <title>Layer 1</title>
+                        <line stroke="#000" stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_13"
+                            y2="2.242392" x2="19.597396" y1="2.242392" x1="-2.08303" fill-opacity="null"
+                            stroke-opacity="null" stroke-width="4" fill="none" />
+                        <line stroke="#000" stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_14"
+                            y2="13.742124" x2="19.597396" y1="13.742124" x1="-2.08303" fill-opacity="null"
+                            stroke-opacity="null" stroke-width="4" fill="none" />
+                        <line stroke="#000" stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_15"
+                            y2="7.908926" x2="19.597396" y1="7.908926" x1="-2.08303" fill-opacity="null"
+                            stroke-opacity="null" stroke-width="4" fill="none" />
+                    </g>
+                </svg>
+            </button>
+        </header>
+        <div class="menu" id="menu">
+            <nav class="navigation-menu">
+                <div class="profile">
+                    <span class="profile-img">
+                        <img src="img/perfil.jpeg" alt="imagem do perfil">
+                    </span>
+                    <span>
+                        <p class="name">Philipe Anderson</p>
+                        <p class="status">online</p>
+                    </span>
                 </div>
-                <div class="icon-menu">
-                    <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
-                        <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
-                        <!-- <g>
-                         <title>background</title>
-                         <rect fill="#fff" id="canvas_background" height="18" width="18" y="-1" x="-1"/>
-                         <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
-                          <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
-                         </g>
-                        </g> -->
-                        <g>
-                         <title>Layer 1</title>
-                         <line stroke="#000" stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_13" y2="2.242392" x2="19.597396" y1="2.242392" x1="-2.08303" fill-opacity="null" stroke-opacity="null" stroke-width="4" fill="none"/>
-                         <line stroke="#000" stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_14" y2="13.742124" x2="19.597396" y1="13.742124" x1="-2.08303" fill-opacity="null" stroke-opacity="null" stroke-width="4" fill="none"/>
-                         <line stroke="#000" stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_15" y2="7.908926" x2="19.597396" y1="7.908926" x1="-2.08303" fill-opacity="null" stroke-opacity="null" stroke-width="4" fill="none"/>
-                        </g>
-                       </svg>
-                </div>
-            </header>
-            <div class="menu">
-                <nav class="navigation-menu">
-                    <div class="profile">
-                        <span class="profile-img">
-                            <img src="img/perfil.jpeg" alt="imagem do perfil">
-                        </span>
-                        <span>
-                            <p class="name">Philipe Anderson</p>
-                            <p class="status">online</p>
-                        </span>
-                    </div>
-                    <ul class="list-nav">
-                        <li class="item-nav"><a class="link-nav" href="#"><i class="fas fa-tachometer-alt icon"></i> Dashboard</a></li>
-                        <li class="item-nav"><a class="link-nav" href="#"><i class="fas fa-calendar-alt icon"></i> Calendário</a></li>
-                        <li class="item-nav"><a class="link-nav link-nav-arrow" href="#"><i class="fas fa-book icon"></i> Documentações</a></li>
-                        <ul class="list-nav-second hide">
-                            <li class="item-nav-second"><a href="#">Doc1</a></li>
-                            <li class="item-nav-second"><a href="#">Doc2</a></li>
-                        </ul>
-                        <li class="item-nav"><a class="link-nav" href="#"><i class="fas fa-cog icon"></i> Configurações</a></li>
+                <ul class="list-nav">
+                    <li class="item-nav"><a class="link-nav" href="#"><i class="fas fa-tachometer-alt icon"></i>
+                            Dashboard</a></li>
+                    <li class="item-nav"><a class="link-nav" href="#"><i class="fas fa-calendar-alt icon"></i>
+                            Calendário</a></li>
+                    <li class="item-nav"><a class="link-nav link-nav-arrow " href="#"><i class="fas fa-book icon"></i>
+                            Documentações</a></li>
+                    <ul class="list-nav-second hide">
+                        <li class="item-nav-second">
+                            <a href="#">Doc1</a>
+                        </li>
+                        <li class="item-nav-second">
+                            <a href="#">Doc2</a>
+                        </li>
                     </ul>
-                </nav>
-            </div>
-            <div class="content">
-                <h1 class="title">Conteúdo</h1>
-            </div>
+                    <li class="item-nav"><a class="link-nav" href="#"><i class="fas fa-cog icon"></i> Configurações</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-        <script src="https://kit.fontawesome.com/892399f368.js" crossorigin="anonymous"></script>
-        <script src="js/script.js"></script>
-    </body>
+        <div class="content">
+            <h1 class="title">Conteúdo</h1>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/892399f368.js" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+
 </html>
